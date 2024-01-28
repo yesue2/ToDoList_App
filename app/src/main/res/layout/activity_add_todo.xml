@@ -41,6 +41,7 @@
         app:layout_constraintTop_toBottomOf="@+id/edit_title" />
 
     <RadioGroup
+        android:id="@+id/radioGroup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -52,16 +53,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="낮음" />
+
         <RadioButton
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:id="@+id/btn_middle"
-            android:text="중간"/>
-        <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="중간" />
+
+        <RadioButton
             android:id="@+id/btn_high"
-            android:text="높음"/>
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="높음" />
     </RadioGroup>
 
     <Button
@@ -71,8 +74,8 @@
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="20dp"
-        android:text="완료"
         android:backgroundTint="@color/pink"
+        android:text="완료"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
