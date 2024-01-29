@@ -1,4 +1,4 @@
-## 📷 ToDoList Application
+## ✔️ ToDoList Application
 ## 📌 주요 기능
 ### 할 일 리스트 작성
 1. 앱 시작 화면에 저장한 **할 일 리스트 출력**
