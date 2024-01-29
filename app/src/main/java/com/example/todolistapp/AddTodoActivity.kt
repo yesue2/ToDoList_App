@@ -1,5 +1,6 @@
 package com.example.todolistapp
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -29,7 +30,6 @@ class AddTodoActivity : AppCompatActivity() {
     private fun insertTodo() {
         val todoTitle = binding.editTitle.text.toString()  // 할 일의 제목
         var todoImportance = binding.radioGroup.checkedRadioButtonId  // 할 일의 중요도
-
         when(todoImportance) {
             R.id.btn_high -> {
                 todoImportance = 1
@@ -57,7 +57,7 @@ class AddTodoActivity : AppCompatActivity() {
                     Toast.makeText(this, "추가되었습니다.", Toast.LENGTH_SHORT) .show()
                     finish()
                 }
-            }
+            }.start()
         }
     }
 }
